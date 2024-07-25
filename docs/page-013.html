@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>13. Books did not fare well</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+<div id="container" class="page-013">
+
+<div id="nav-prev" class="nav-link">
+  <a href="page-012.html">&larr;</a>
+</div>
+
+<div id="content" class="text-center">
+<h3>Books did not fare well</h3>
+<p><img src="images/flood_IMG_20191015_095954-800x600.jpg" alt="Picture of damp books on shelf" /></p>
+</div>  <!-- content -->
+
+<div id="nav-next" class="nav-link">
+  <a href="page-014.html">&rarr;</a>
+</div>
+
+</div>  <!-- container -->
+
+<script type="text/javascript">
+    document.addEventListener('keydown', function(event) {
+        const key = event.key;
+        switch (key) {
+            case "ArrowLeft":
+                window.location.href = "page-012.html";
+                break;
+            case "PageUp":
+                window.location.href = "page-012.html";
+                break;
+            case "ArrowRight":
+                window.location.href = "page-014.html";
+                break;
+            case "PageDown":
+                window.location.href = "page-014.html";
+                break;
+            default:
+                break;
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    var containerDiv = document.getElementById('container');
+    var timeoutId;
+    document.addEventListener('mousemove', function() {
+        containerDiv.classList.add('show-nav');
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(function() {
+            containerDiv.classList.remove('show-nav');
+        }, 2000);
+    });
+</script>
+
+</body>
+</html>

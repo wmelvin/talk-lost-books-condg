@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>2. Lightning Talk</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+<div id="container" class="page-002">
+
+<div id="nav-prev" class="nav-link">
+  <a href="page-001.html">&larr;</a>
+</div>
+
+<div id="content" class="text-center img-50">
+<h2>Lightning Talk</h2>
+<p><img src="images/intro_lightning-talk-1.jpg" alt="Lightning Talk image 1" /></p>
+<p><sub>Prompt: Create a cartoon image representing the term &quot;lightning talk.&quot;</sub></p>
+</div>  <!-- content -->
+
+<div id="nav-next" class="nav-link">
+  <a href="page-003.html">&rarr;</a>
+</div>
+
+</div>  <!-- container -->
+
+<script type="text/javascript">
+    document.addEventListener('keydown', function(event) {
+        const key = event.key;
+        switch (key) {
+            case "ArrowLeft":
+                window.location.href = "page-001.html";
+                break;
+            case "PageUp":
+                window.location.href = "page-001.html";
+                break;
+            case "ArrowRight":
+                window.location.href = "page-003.html";
+                break;
+            case "PageDown":
+                window.location.href = "page-003.html";
+                break;
+            default:
+                break;
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    var containerDiv = document.getElementById('container');
+    var timeoutId;
+    document.addEventListener('mousemove', function() {
+        containerDiv.classList.add('show-nav');
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(function() {
+            containerDiv.classList.remove('show-nav');
+        }, 2000);
+    });
+</script>
+
+</body>
+</html>

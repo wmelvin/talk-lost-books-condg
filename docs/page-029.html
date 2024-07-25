@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>29. Create Azure Resource</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+<div id="container" class="page-029">
+
+<div id="nav-prev" class="nav-link">
+  <a href="page-028.html">&larr;</a>
+</div>
+
+<div id="content">
+<h3>Create Azure Resource</h3>
+<p><strong>Documentation Links</strong></p>
+<ul>
+<li><a target="_blank" href="https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision/">Computer Vision documentation</a></li>
+<li><a target="_blank" href="https://learn.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview-ocr">OCR - Optical Character Recognition - Azure Cognitive Services</a></li>
+<li><a target="_blank" href="https://learn.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/how-to-guides/use-sdk-rest-api?view=form-recog-3.0.0&amp;tabs=windows&amp;pivots=programming-language-csharp">Use Form Recognizer client library SDKs or REST API</a></li>
+<li><a target="_blank" href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/formrecognizer/Azure.AI.FormRecognizer/samples/Sample_AnalyzePrebuiltRead.md#use-the-prebuilt-read-model-to-analyze-a-document-from-a-file-stream">azure-sdk-for-net/Sample_AnalyzePrebuiltRead</a></li>
+<li><a target="_blank" href="https://learn.microsoft.com/en-us/dotnet/api/azure.ai.formrecognizer.documentanalysis.documentanalysisclient.analyzedocumentasync?view=azure-dotnet">DocumentAnalysisClient.AnalyzeDocumentAsync Method</a></li>
+</ul>
+<p>Note: Microsoft has renamed <strong>Form Recognizer</strong> to <strong>Document Intelligence</strong>.</p>
+</div>  <!-- content -->
+
+<div id="nav-next" class="nav-link">
+  <a href="page-030.html">&rarr;</a>
+</div>
+
+</div>  <!-- container -->
+
+<script type="text/javascript">
+    document.addEventListener('keydown', function(event) {
+        const key = event.key;
+        switch (key) {
+            case "ArrowLeft":
+                window.location.href = "page-028.html";
+                break;
+            case "PageUp":
+                window.location.href = "page-028.html";
+                break;
+            case "ArrowRight":
+                window.location.href = "page-030.html";
+                break;
+            case "PageDown":
+                window.location.href = "page-030.html";
+                break;
+            default:
+                break;
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    var containerDiv = document.getElementById('container');
+    var timeoutId;
+    document.addEventListener('mousemove', function() {
+        containerDiv.classList.add('show-nav');
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(function() {
+            containerDiv.classList.remove('show-nav');
+        }, 2000);
+    });
+</script>
+
+</body>
+</html>

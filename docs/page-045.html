@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>45. Anders Hejlsberg</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+<div id="container" class="page-045">
+
+<div id="nav-prev" class="nav-link">
+  <a href="page-044.html">&larr;</a>
+</div>
+
+<div id="content">
+<h2>Anders Hejlsberg</h2>
+<ul>
+<li>In 1980 began writing a <strong>Pascal</strong> compiler which was eventually licensed to Borland and became <strong>Turbo Pascal</strong>.</li>
+<li>In 1989 moved to California and joined <strong>Borland</strong> as Chief Engineer.</li>
+<li>Became chief architect for the team that created <strong>Borland Delphi</strong>.</li>
+<li>In 1996 joined Microsoft, and eventually became the lead architect of the team developing <strong>C#</strong>.</li>
+<li>Later worked on the development of <strong>TypeScript</strong>.</li>
+</ul>
+<p>Wikipedia: <a target="_blank" href="https://en.wikipedia.org/wiki/Anders_Hejlsberg">Anders Hejlsberg</a></p>
+<p>Interview on YouTube: <a target="_blank" href="https://www.youtube.com/watch?v=6udlQakSXZY">From Turbo Pascal to Delphi to C# to TypeScript...</a></p>
+</div>  <!-- content -->
+
+<div id="nav-next" class="nav-link">
+  <a href="page-046.html">&rarr;</a>
+</div>
+
+</div>  <!-- container -->
+
+<script type="text/javascript">
+    document.addEventListener('keydown', function(event) {
+        const key = event.key;
+        switch (key) {
+            case "ArrowLeft":
+                window.location.href = "page-044.html";
+                break;
+            case "PageUp":
+                window.location.href = "page-044.html";
+                break;
+            case "ArrowRight":
+                window.location.href = "page-046.html";
+                break;
+            case "PageDown":
+                window.location.href = "page-046.html";
+                break;
+            default:
+                break;
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    var containerDiv = document.getElementById('container');
+    var timeoutId;
+    document.addEventListener('mousemove', function() {
+        containerDiv.classList.add('show-nav');
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(function() {
+            containerDiv.classList.remove('show-nav');
+        }, 2000);
+    });
+</script>
+
+</body>
+</html>

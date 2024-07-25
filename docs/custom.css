@@ -1,0 +1,84 @@
+/* Override / extend */
+
+p { font-size: larger; }
+
+li { font-size: 20px; }
+
+blockquote { font-size: 16px; }
+
+h1 { font-size: 45px; }
+h2 { font-size: 40px; }
+h3 { font-size: 35px; }
+h4 { font-size: 30px; }
+h5 { font-size: 25px; }
+
+h2 {
+    text-align: center;
+    color: white;
+    background-color: steelblue;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: steelblue;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h4 { color: rgb(66, 96, 121); }
+
+h5 { color: rgb(38, 55, 70); }
+
+/* Custom classes */
+
+.dbl h2 { margin-bottom: 4rem; }
+.dbl p { margin-top: 2rem; }
+.dbl li { margin-top: 2rem; }
+
+.img-30 img { width: 30%; }
+.img-40 img { width: 40%; }
+.img-50 img { width: 50%; }
+.img-60 img { width: 60%; }
+.img-70 img { width: 70%; }
+
+.xxl li { font-size: xx-large; }
+
+.precode pre {
+    background-color: #eee;
+}
+
+
+.book-result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* The heading spans two columns. */
+.book-result h2, h3, h4 {
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+/* The first paragraph contains the book image. */
+.book-result > p:first-of-type { grid-column: 1; }
+
+/* The result text is within a <pre> tag. */
+.book-result pre {
+    grid-column: 2;
+    background-color: #eee;
+    padding: 1rem;
+}
+
+/*
+.book-result h2 { border: 1px solid red;}
+.book-result > p:first-of-type { border: 1px solid blue; }
+.book-result pre { border: 1px solid green; }
+*/
+
+/* Index page */
+
+.index-lev-2 a { padding-left: 2rem; color: steelblue }
+.index-lev-3 a { padding-left: 4rem; color: darkcyan; }
+.index-lev-4 a { padding-left: 6rem; color: green; }
+.index-lev-5 a { padding-left: 8rem; color: brown; }
