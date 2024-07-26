@@ -30,6 +30,11 @@ h4 { color: rgb(66, 96, 121); }
 
 h5 { color: rgb(38, 55, 70); }
 
+a:link, a:visited {
+    color: royalblue;
+}
+
+
 /* Custom classes */
 
 .dbl h2 { margin-bottom: 4rem; }
