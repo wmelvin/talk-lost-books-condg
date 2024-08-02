@@ -47,43 +47,43 @@
 </script>
 
 <script type="text/javascript">
-    let downX = 0;
-    let downY = 0;
-    let upX = 0;
-    let upY = 0;
+    let startX = 0;
+    let startY = 0;
+    let endX = 0;
+    let endY = 0;
     let prevPage = 'page-012.html';
     let nextPage = 'page-014.html';
     const MIN_SWIPE = 30;
 
-    document.addEventListener('pointerdown', (event) => {
-        downX = event.clientX;
-        downY = event.clientY;
+    document.addEventListener('touchstart', (event) => {
+        startX = event.changedTouches[0].screenX;
+        startY = event.changedTouches[0].screenY;
     }, false);
 
-    document.addEventListener('pointerup', (event) => {
-        upX = event.clientX;
-        upY = event.clientY;
+    document.addEventListener('touchend', (event) => {
+        endX = event.changedTouches[0].screenX;
+        endY = event.changedTouches[0].screenY;
         handleSwipe();
     }, false);
 
     function handleSwipe() {
-        let diffX = upX - downX;
-        let diffY = upY - downY;
+        let diffX = endX - startX;
+        let diffY = endY - startY;
 
         if (Math.abs(diffX) > Math.abs(diffY)) {
             if (Math.abs(diffX) > MIN_SWIPE) {
                 if (diffX > 0) {  // Swipe right
-                    if (nextPage) { window.location.href = nextPage; }
-                } else {  // Swipe left
                     if (prevPage) { window.location.href = prevPage; }
+                } else {  // Swipe left
+                    if (nextPage) { window.location.href = nextPage; }
                 }
             }
         } else {
             if (Math.abs(diffY) > MIN_SWIPE) {
                 if (diffY > 0) {  // Swipe down
-                    if (nextPage) { window.location.href = nextPage; }
-                } else {  // Swipe up
                     if (prevPage) { window.location.href = prevPage; }
+                } else {  // Swipe up
+                    if (nextPage) { window.location.href = nextPage; }
                 }
             }
         }
